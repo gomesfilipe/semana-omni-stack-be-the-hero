@@ -10,6 +10,4 @@ app.use(express.json())
 app.use(router)
 app.use(errors())
 
-const port = 3333
-app.listen(port)
-console.log(`http://localhost:${port}`)
+module.exports = app

@@ -14,8 +14,8 @@ const router = express.Router()
 
 router.post('/sessions', SessionValidator.create, SessionController.create)
 
-router.get('/ongs', OngController.index)
-router.post('/ongs', OngValidator.create, OngController.create)
+router.get('/ongs', OngController.index) //!OK
+router.post('/ongs', OngValidator.create, OngController.create) //!OK
 
 router.get('/profile', ProfileValidator.get, ProfileController.index)
 
